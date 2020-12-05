@@ -19,7 +19,7 @@ public class ConfigCommand implements CommandExecutor {
                 sender.sendMessage(utilities.coloredStr("&c/config get <value>"));
                 return false;
             }
-            sender.sendMessage(utilities.coloredStr(args[1] + " &7is &f" + MyFirstPlugin.getInstance().getConfig().getString(args[1])));
+            sender.sendMessage(utilities.coloredStr(args[1] + " &7is &f" + MyFirstPlugin.get().getConfig().getString(args[1])));
 
         } else if (args[0].equals("set")) {
             if (args.length < 3) {
@@ -27,13 +27,13 @@ public class ConfigCommand implements CommandExecutor {
                 return false;
             } else {
                 String rest = utilities.rest(args, 2);
-                MyFirstPlugin.getInstance().getConfig().set(args[1], rest);
-                MyFirstPlugin.getInstance().saveConfig();
+                MyFirstPlugin.get().getConfig().set(args[1], rest);
+                MyFirstPlugin.get().saveConfig();
                 sender.sendMessage(utilities.coloredStr(args[1] + " &7is now &f" + rest));
             }
 
         } else if (args[0].equals("reload")) {
-            MyFirstPlugin.getInstance().reloadConfig();
+            MyFirstPlugin.get().reloadConfig();
             sender.sendMessage(utilities.coloredStr("&aReloaded the config."));
         }
 

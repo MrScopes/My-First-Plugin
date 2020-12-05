@@ -14,7 +14,7 @@ public class SpawnCommand implements CommandExecutor {
         if (cmd.getName().equals("spawn")) {
             Player player = (Player) sender;
 
-            Location location = utilities.locationFromString(MyFirstPlugin.getInstance().getConfig().getString("spawn"));
+            Location location = utilities.locationFromString(MyFirstPlugin.get().getConfig().getString("spawn"));
             player.teleport(location);
             player.sendMessage(utilities.coloredStr("Teleported to &a" + utilities.stringFromLocation(location, true)));
 
@@ -24,8 +24,8 @@ public class SpawnCommand implements CommandExecutor {
                 Player player = (Player) sender;
 
                 String location = utilities.stringFromLocation(player.getLocation(), false);
-                MyFirstPlugin.getInstance().getConfig().set("spawn", location);
-                MyFirstPlugin.getInstance().saveConfig();
+                MyFirstPlugin.get().getConfig().set("spawn", location);
+                MyFirstPlugin.get().saveConfig();
                 sender.sendMessage(utilities.coloredStr("Spawn has been set to &a" + utilities.stringFromLocation(player.getLocation(), true)));
             } else {
                 sender.sendMessage(utilities.coloredStr("&cYou can't set spawn as console."));
