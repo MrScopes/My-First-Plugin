@@ -1,0 +1,23 @@
+name: MyFirstPlugin
+version: ${project.version}
+main: me.mrscopes.myfirstplugin.MyFirstPlugin
+api-version: 1.16
+authors: [ MrScopes ]
+commands:
+  mrscopes:
+    description: Hello World!
+  gmc:
+    description: Change someone's gamemode to creative.
+    permission: command.gamemode.creative
+  gms:
+    description: Change someone's gamemode to survival.
+    permission: command.gamemode.survival
+  gma:
+    description: Change someone's gamemode to adventure.
+    permission: command.gamemode.adventure
+  gmsp:
+    description: Change someone's gamemode to spectator.
+    permission: command.gamemode.spectator
+  config:
+    description: Config Management.
+    permission: command.config
