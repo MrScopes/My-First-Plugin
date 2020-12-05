@@ -16,6 +16,8 @@ public class CommandHandler {
         registerCommand("gma", new GamemodeCommand());
         registerCommand("gmsp", new GamemodeCommand());
         registerCommand("config", new ConfigCommand());
+        registerCommand("spawn", new SpawnCommand());
+        registerCommand("setspawn", new SpawnCommand());
     }
 
     private void registerCommand(String command, CommandExecutor executor) {

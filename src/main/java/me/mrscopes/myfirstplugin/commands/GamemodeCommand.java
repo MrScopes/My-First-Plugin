@@ -13,7 +13,7 @@ public class GamemodeCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         GameMode mode;
 
-        switch (label.toLowerCase()) {
+        switch (cmd.getName()) {
             case "gmc":
                 mode = GameMode.CREATIVE;
                 break;

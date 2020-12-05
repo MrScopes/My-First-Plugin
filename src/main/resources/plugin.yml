@@ -21,3 +21,8 @@ commands:
   config:
     description: Config Management.
     permission: command.config
+  spawn:
+    description: Teleport to spawn.
+  setspawn:
+    description: Set the spawnpoint.
+    permission: command.setspawn
