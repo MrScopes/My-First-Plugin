@@ -15,6 +15,7 @@ public class ListenerHandler {
         registerEvent(new PlayerJoinListener());
         registerEvent(new PlayerQuitListener());
         registerEvent(new PlayerChatListener());
+        registerEvent(new BlockBreakListener());
     }
 
     private void registerEvent(Listener event) {
