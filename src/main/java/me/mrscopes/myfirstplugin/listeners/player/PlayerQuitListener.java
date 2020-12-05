@@ -1,4 +1,4 @@
-package me.mrscopes.myfirstplugin.listeners;
+package me.mrscopes.myfirstplugin.listeners.player;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

@@ -1,4 +1,4 @@
-package me.mrscopes.myfirstplugin.listeners;
+package me.mrscopes.myfirstplugin.listeners.block;
 
 import me.mrscopes.myfirstplugin.utilities;
 import org.bukkit.block.Block;
