@@ -66,16 +66,6 @@ public class utilities {
     }
 
     public static String sexyString(String string) {
-        String[] sexy = string.split("");
-
-        for (int i = 0; i < sexy.length; i++) {
-            if (i == 0) {
-                sexy[i] = sexy[i].toUpperCase();
-            }
-            else {
-                sexy[i] = sexy[i].toLowerCase();
-            }
-        }
-        return String.join("", sexy);
+        return string.substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
     }
 }
