@@ -18,7 +18,9 @@ public final class MyFirstPlugin extends JavaPlugin {
     }
 
     @Override
-    public void onDisable() { getLogger().info("Disabled Test Plugin."); }
+    public void onDisable() {
+        getLogger().info("Disabled Test Plugin.");
+    }
 
     public static MyFirstPlugin getInstance() {
         return instance;
